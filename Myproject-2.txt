@@ -1,0 +1,91 @@
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(https://images.unsplash.com/photo-1557063673-0493e05da49f?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+    .com
+    {
+        border-radius: 25px;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+        padding: 25px;
+        max-width: 400px;
+        width: 45%;
+        transition: transform 0.3s ease;
+       
+    }
+    h2{
+        text-align: center;
+        padding: 0px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    input
+    {
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 0.5px solid;
+        border-radius: 20px;
+        background: transparent;
+    }
+    button
+    {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    button:hover
+    {
+        background-color: blue;
+    }
+    .com:hover
+    {
+        transform: scale(1.03);
+    }
+   #Gender
+   {
+    padding: 10px;
+    margin-bottom: 16px;
+    background: transparent;
+    border-radius: 25px;
+    border: 0.5px solid;
+   }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="com">
+        <h2>Registration form</h2>
+        <form>
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Username" name="Username" required>
+        <label for="Email">Email:</label>
+        <input type="email" placeholder="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="password" name="password" required>
+        <label for="Gender"> Gender:</label>
+        <select id="Gender">
+            <option value="select">select</option>
+            <option value="select">Male</option>
+            <option value="select">Female</option>
+        </select>
+        <button type="submit">Register</button>
+       
+        </form>
+    </div>
+</body>
+</html>
